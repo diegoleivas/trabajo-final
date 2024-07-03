@@ -142,10 +142,10 @@ header {
   }
 
   #chicos-scout {
-    width: 500px;
-    /* Ancho deseado */
+    width: 300px;
+   
     height: auto;
-    /* Altura automática para mantener la proporción */
+    
     display: inline-block;
   }
 
@@ -290,12 +290,14 @@ tr:nth-child(even) {
 @media screen and (max-width:767px) {
  
 #ubicacion{
-  width: 350px;
-  height:350px ;
-
+  
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+}
 }
 
-  }
+  
 
 
 
