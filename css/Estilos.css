@@ -99,58 +99,56 @@ header {
 
 #principal-scout {
   display: flex;
-  background-color: rgb(249, 249, 246);
-  margin-top: 0%;
-  padding: 3%;
-  height: auto;
-
-
-
-}
-
-#bienvenida {
-  justify-content: center;
-  align-content: center;
-  margin-left: 50px;
-
-
-}
-
-#mensaje1 {
-  font-size: 40px;
-  color: #6f8f56;
-  font-family: 'DM Sans';
-}
-
-#mensaje2 {
-  font-size: 50px;
-  color: #6f8f56;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #chicos-scout {
-  width: 600px;
-  /* Ancho deseado */
+  max-width: 100%;
   height: auto;
-  /* Altura automática para mantener la proporción */
-  display: inline-block;
+}
+#mensaje1{
+  font-size: 40px;
+  font-family: 'DM Sans';
+  color: #6f8f56;
+}
+#mensaje2{
+  font-size: 60px;
+  font-family: 'DM Sans';
+  color: #6f8f56;
 }
 
-@media (max-width: 600px) {
+#bienvenida {
+  margin-top: 20px;
+}
 
+
+@media (min-width: 768px) {
   #principal-scout {
-    flex-direction: column;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  #chicos-scout, #bienvenida {
+      max-width: 50%;
+  }
+
+  #bienvenida {
+      text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  #principal-scout {
+      padding: 20px;
   }
 
   #chicos-scout {
-    width: 300px;
-   
-    height: auto;
-    
-    display: inline-block;
+      margin-bottom: 20px;
   }
-
-
 }
+
 
 #mision {
   color: #6f8f56;
