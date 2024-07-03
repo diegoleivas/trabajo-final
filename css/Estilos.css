@@ -56,6 +56,7 @@ header {
   display: inline;
   border-radius: 60%;
   box-shadow: rgba(50, 4, 5, 0.4) 3px 3px 5px;
+  
 
 }
 
@@ -83,7 +84,7 @@ header {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   #header h1 {
     align-items: center;
@@ -96,6 +97,8 @@ header {
   }
 
 }
+
+
 
 #principal-scout {
   display: flex;
