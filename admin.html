@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Administrador | Unahur</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/Estilos.css">
+    <link rel="stylesheet" href="./css/ejercitacion.css">
+    <link rel="icon" type="image/x-icon" href="./imagenes/cafe.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <div id="header">
+
+            <img id="logo-unahur" src="./multimedia/logo_unahur.png" alt="" width="150px">
+            <h1>Administrador de Album </h1>
+
+        </div>
+    </header>
+
+    <section id="navbar-contenedor ">
+
+
+        <nav class="navbar navbar-expand-md navbar1 ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  " id="navbarToggler">
+                    <a class="navbar-brand" href="#">
+                        <img id="flor-loto" src="./multimedia/The_Scout_Association_logo_2018.svg.png" alt="" width="35"
+                            height="35">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center navbar2">
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link  " href="#alta">Alta </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#baja">Baja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#modifica">Modificacion</a>
+                        </li>
+
+                        <li class="boton-mode">
+                            <button id="dark-mode" type="button" class="btn btn-warning"
+                                onclick="location.href='index.html'">volver</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    
+        <h1 id="welcome-message" ></h1>
+        <br>
+
+
+
+         <section id="alta">
+        <div class="formulario-administracion">
+            
+            <label for="exampleFormControlInput1" class="form-label">Formulario <strong>Alta</strong> de Fotos</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione Album</option>
+                <option value="1">Castores</option>
+                <option value="2">Lobatos</option>
+                <option value="3">Unidad</option>
+                <option value="4">Caminantes</option>
+                <option value="5">Rovers</option>
+                <option value="6">Adultos</option>
+                <option value="7">Colaboradores</option>
+            </select>
+            <br>
+            <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"><br>
+            
+            <button type="button" class="btn btn-success">Agregar foto</button>
+            <br>
+            <br>
+        
+        </div>
+    </section>
+        <br>
+
+        <section id="baja">
+
+        <div id="baja" class="formulario-administracion">
+            <label for="exampleFormControlInput1" class="form-label">Formulario <strong>Baja</strong> de Fotos</label>
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Seleccione Album</option>
+                <option value="1">Castores</option>
+                <option value="2">Lobatos</option>
+                <option value="3">Unidad</option>
+                <option value="4">Caminantes</option>
+                <option value="5">Rovers</option>
+                <option value="6">Adultos</option>
+                <option value="7">Colaboradores</option>
+            </select>
+            <br>
+            
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una Foto</option>
+                <option value="1">Foto1</option>
+                <option value="2">Foto2</option>
+                <option value="3">foto3</option>
+                <option value="3">foto4</option>
+                <option value="3">foto5</option>
+              </select>
+              <br>
+
+            <button type="button" class="btn btn-success">Eliminar foto</button>
+            <br>
+            <br>
+        </div>
+    </section>
+    
+        <br>
+        <section id="modifica">
+        <div  class="formulario-administracion">
+            <label for="exampleFormControlInput1" class="form-label">Formulario <strong>De Modificacion</strong> de Fotos</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione Album</option>
+                <option value="1">Castores</option>
+                <option value="2">Lobatos</option>
+                <option value="3">Unidad</option>
+                <option value="4">Caminantes</option>
+                <option value="5">Rovers</option>
+                <option value="6">Adultos</option>
+                <option value="7">Colaboradores</option>
+            </select>
+            <br>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una Foto</option>
+                <option value="1">Foto1</option>
+                <option value="2">Foto2</option>
+                <option value="3">foto3</option>
+                <option value="3">foto4</option>
+                <option value="3">foto5</option>
+              </select>
+              <br>
+              <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"><br>
+              <br>
+            
+            <button type="button" class="btn btn-success">Reemplazar  foto</button>
+            <br>
+            <br>
+        </div>
+    </section>
+    
+
+   
+
+
+
+    <footer>
+        <br><br><br><br>
+
+
+
+
+        <p>Contacto y Redes</p>
+        <p>Tte. Manuel Origone 151, Villa Tesei, Provincia de Buenos Aires</p>
+        <p>Diego Leivas - Comision 3</p>
+
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <h1 id="welcome-message"></h1>
+</body>
+<script src="./js/script2.js"></script>
+
+</html>

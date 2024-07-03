@@ -1,0 +1,16 @@
+#contenedor2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre las imágenes */
+  }
+  
+  #contenedor2 > div {
+    text-align: center;
+  }
+  
+  .descripcion {
+    margin-top: 10px; /* Espacio entre la imagen y la descripción */
+    font-style: italic;
+    color: #666; /* Color de la descripción */
+  }
+  
